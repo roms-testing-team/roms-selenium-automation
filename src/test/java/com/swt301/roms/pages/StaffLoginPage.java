@@ -9,7 +9,7 @@ public class StaffLoginPage extends BasePage {
     private final By employeeCodeInput = By.cssSelector("input[placeholder*='MGR-001']");
     private final By pinInput          = By.cssSelector("input[type='password'][placeholder='••••••']");
     private final By loginButton       = By.cssSelector("button[type='submit']");
-    private final By errorMessageDiv   = By.xpath("//div[contains(@style, 'FFDAD6')]//span[last()]");
+    private final By errorMessageDiv = By.xpath("//span[text()='error']/following-sibling::span");
 
     public StaffLoginPage(WebDriver driver) {
         super(driver);
@@ -47,4 +47,18 @@ public class StaffLoginPage extends BasePage {
     public String getPinValidationMessage() {
         return driver.findElement(pinInput).getAttribute("validationMessage");
     }
+    /**
+     * Lấy thuộc tính maxLength của ô nhập PIN để kiểm tra giới hạn 6 số
+     */
+    public String getPinMaxLength() {
+        return driver.findElement(pinInput).getAttribute("maxlength");
+    }
+
+    /**
+     * Lấy giá trị chuỗi đang hiển thị trong ô nhập PIN
+     */
+    public String getPinValue() {
+        return driver.findElement(pinInput).getAttribute("value");
+    }
+
 }
