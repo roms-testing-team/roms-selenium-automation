@@ -1,0 +1,9 @@
+tcId,employeeCode,pin,expectedResult,expectedTargetUrlOrError
+TC-STAFF-001,MGR-001,123456,SUCCESS,/admin
+TC-STAFF-002,EMP-001,123456,SUCCESS,/waiter
+TC-STAFF-003,KDS-001,123456,SUCCESS,/kitchen
+TC-STAFF-004,CSH-001,123456,SUCCESS,/pos
+TC-STAFF-005,MGR-001,999999,FAIL,Mã PIN không chính xác
+TC-STAFF-006,NOTEXIST,123456,FAIL,Mã nhân viên không tồn tại
+TC-STAFF-007,MGR-001,123,VALIDATION,Mã PIN ca trực phải gồm chính xác 6 chữ số
+TC-STAFF-008,,123456,REQUIRED,Vui lòng nhập Mã Nhân Viên

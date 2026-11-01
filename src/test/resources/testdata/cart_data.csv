@@ -1,0 +1,6 @@
+tcId,dishName,initialQty,addMoreQty,expectedTotalQty,expectedMessage
+TC-CART-001,Bò bít tết sốt tiêu,1,0,1,
+TC-CART-002,Bò bít tết sốt tiêu,2,3,5,
+TC-CART-003,Gà nướng muối ớt,1,98,99,
+TC-CART-004,Gà nướng muối ớt,99,1,99,Số lượng tối đa là 99
+TC-CART-005,Salad cá hồi,0,0,0,Món ăn đã được xóa khỏi giỏ
