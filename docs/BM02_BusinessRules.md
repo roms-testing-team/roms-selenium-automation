@@ -1,14 +1,14 @@
 # BM02 – BUSINESS RULES & TEST CONDITIONS (ROMS)
-## Áp Dụng Cho 3 Chức Năng: Đăng Nhập, Đặt Bàn, Gọi Món
+## Áp Dụng Cho 3 Chức Năng: Đăng Nhập, Gọi Món, Đặt Bàn
 
-Tài liệu này tổng hợp toàn bộ các Quy tắc nghiệp vụ (Business Rules) có thể kiểm thử được qua giao diện người dùng (UI-testable) cho 3 module chính của hệ thống ROMS.
+Tài liệu này tổng hợp toàn bộ các Quy tắc nghiệp vụ (Business Rules) có thể kiểm thử được qua giao diện người dùng (UI-testable) cho 3 chức năng chính của hệ thống ROMS theo đúng phân công thành viên.
 
 ---
 
 ## 1. Module M1: Đăng Nhập Nhân Viên & Phân Quyền (Staff Login & RBAC)
 - **URL:** `/login` | **Actor:** Manager, Waiter, Kitchen Staff, Cashier
 - **Giao diện:** `StaffLoginPage.jsx`
-- **Người phụ trách:** SV1 (Test Lead)
+- **Người phụ trách:** **Ngô Viết Bảo Huy (`ngo17574-ops`)**
 
 | BR ID | Nội dung Quy tắc nghiệp vụ | Kết quả mong đợi trên UI | Kỹ thuật | Auto? |
 |:---|:---|:---|:---:|:---:|
@@ -23,28 +23,10 @@ Tài liệu này tổng hợp toàn bộ các Quy tắc nghiệp vụ (Business 
 
 ---
 
-## 2. Module M2: Đặt Bàn Trực Tuyến (Public Table Reservation)
-- **URL:** `/reservation` | **Actor:** Khách hàng vãng lai (Public Customer)
-- **Giao diện:** `ReservationPage.jsx`
-- **Người phụ trách:** SV2 (Framework Owner)
-
-| BR ID | Nội dung Quy tắc nghiệp vụ | Kết quả mong đợi trên UI | Kỹ thuật | Auto? |
-|:---|:---|:---|:---:|:---:|
-| `RULE-RESV-01` | Số lượng khách (Party size) hợp lệ trong khoảng [1, 20] | Chấp nhận đặt bàn với các giá trị: 1, 2, 10, 19, 20 | BVA | ✅ |
-| `RULE-RESV-02` | Số lượng khách vi phạm biên: $\le 0$ hoặc $> 20$ | Báo lỗi: *"Số lượng khách phải từ 1 đến 20 người"* | BVA | ✅ |
-| `RULE-RESV-03` | Số điện thoại Việt Nam hợp lệ (10 số, bắt đầu bằng số 0) | Chấp nhận số hợp lệ (VD: `0912345678`) | EP / BVA | ✅ |
-| `RULE-RESV-04` | Số điện thoại không hợp lệ (9 số, 11 số, chứa chữ, bắt đầu khác 0) | Báo lỗi định dạng số điện thoại không hợp lệ | EP | ✅ |
-| `RULE-RESV-05` | Họ tên khách hàng hợp lệ (2–50 ký tự, có dấu tiếng Việt) | Form hợp lệ | EP / BVA | ✅ |
-| `RULE-RESV-06` | Họ tên khách hàng chứa ký tự script hoặc để trống | Báo lỗi trường họ tên không được để trống / không hợp lệ | Error Guessing | ✅ |
-| `RULE-RESV-07` | Ngày giờ đặt bàn phải trong tương lai và trong khung giờ hoạt động (09:00 - 22:00) | Chọn thời gian hợp lệ thì submit thành công; chọn quá khứ bị chặn | EP | ✅ |
-| `RULE-RESV-08` | Đặt bàn thành công với đầy đủ thông tin hợp lệ | Hiển thị thông báo hoặc Modal xác nhận thành công kèm Mã Đặt Bàn | State Transition | ✅ |
-
----
-
-## 3. Module M3: Thực Đơn Số & Gọi Món Tại Bàn (Menu & Table Ordering)
+## 2. Module M2: Thực Đơn Số & Gọi Món Tại Bàn (Menu & Table Ordering)
 - **URL:** `/dining/menu` và `/dining/cart` | **Actor:** Thực khách tại bàn
 - **Giao diện:** `CustomerMenuPage.jsx` kết hợp `CustomerCartPage.jsx`
-- **Người phụ trách:** SV3 (Doc & Defect Owner)
+- **Người phụ trách:** **Phạm Minh Đức (`ducminh14-cmd`)**
 
 | BR ID | Nội dung Quy tắc nghiệp vụ | Kết quả mong đợi trên UI | Kỹ thuật | Auto? |
 |:---|:---|:---|:---:|:---:|
@@ -58,3 +40,21 @@ Tài liệu này tổng hợp toàn bộ các Quy tắc nghiệp vụ (Business 
 | `RULE-ORDER-08` | Thêm ghi chú cho món (VD: "Ít cay", "Không đá") | Ghi chú được lưu đúng vào món trong đơn gọi | EP | ✅ |
 | `RULE-ORDER-09` | Món ăn ở trạng thái Tạm hết (Out of stock) | Món bị làm mờ, có tag "Hết món", vô hiệu hóa nút thêm | EP | ✅ |
 | `RULE-ORDER-10` | Bấm "Gửi đơn gọi món" (Batch Order Placement) | Đơn gọi món được gửi thành công, chuyển sang trang theo dõi trạng thái món (`/dining/orders/tracking`) | State Transition | ✅ |
+
+---
+
+## 3. Module M3: Đặt Bàn Trực Tuyến (Public Table Reservation)
+- **URL:** `/reservation` | **Actor:** Khách hàng vãng lai (Public Customer)
+- **Giao diện:** `ReservationPage.jsx`
+- **Người phụ trách:** **Dương Trong (`duogtrog06tk`)**
+
+| BR ID | Nội dung Quy tắc nghiệp vụ | Kết quả mong đợi trên UI | Kỹ thuật | Auto? |
+|:---|:---|:---|:---:|:---:|
+| `RULE-RESV-01` | Số lượng khách (Party size) hợp lệ trong khoảng [1, 20] | Chấp nhận đặt bàn với các giá trị: 1, 2, 10, 19, 20 | BVA | ✅ |
+| `RULE-RESV-02` | Số lượng khách vi phạm biên: $\le 0$ hoặc $> 20$ | Báo lỗi: *"Số lượng khách phải từ 1 đến 20 người"* | BVA | ✅ |
+| `RULE-RESV-03` | Số điện thoại Việt Nam hợp lệ (10 số, bắt đầu bằng số 0) | Chấp nhận số hợp lệ (VD: `0912345678`) | EP / BVA | ✅ |
+| `RULE-RESV-04` | Số điện thoại không hợp lệ (9 số, 11 số, chứa chữ, bắt đầu khác 0) | Báo lỗi định dạng số điện thoại không hợp lệ | EP | ✅ |
+| `RULE-RESV-05` | Họ tên khách hàng hợp lệ (2–50 ký tự, có dấu tiếng Việt) | Form hợp lệ | EP / BVA | ✅ |
+| `RULE-RESV-06` | Họ tên khách hàng chứa ký tự script hoặc để trống | Báo lỗi trường họ tên không được để trống / không hợp lệ | Error Guessing | ✅ |
+| `RULE-RESV-07` | Ngày giờ đặt bàn phải trong tương lai và trong khung giờ hoạt động (09:00 - 22:00) | Chọn thời gian hợp lệ thì submit thành công; chọn quá khứ bị chặn | EP | ✅ |
+| `RULE-RESV-08` | Đặt bàn thành công với đầy đủ thông tin hợp lệ | Hiển thị thông báo hoặc Modal xác nhận thành công kèm Mã Đặt Bàn | State Transition | ✅ |
