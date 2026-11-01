@@ -1,7 +1,7 @@
 # BM09 – BẢNG PHÂN CÔNG CÔNG VIỆC & ĐÓNG GÓP THÀNH VIÊN
-## Dự Án: ROMS Automation Testing (Kế Hoạch 1 Ngày / 1-Day Sprint)
+## Dự Án: ROMS Automation Testing – Kế Hoạch 3 Tuần (RBL)
 
-Nhóm 3 thành viên thực hiện toàn diện quy trình kiểm thử tự động hệ thống ROMS trong **1 ngày (1-Day Intensive Sprint)**. Mỗi thành viên phụ trách **trọn vẹn 1 chức năng theo chiều dọc** (từ BR, TC, CSV data, Page Object, Test Class đến log Bug) kết hợp đảm nhận **một vai trò ngang**:
+Nhóm 3 thành viên thực hiện toàn diện quy trình kiểm thử tự động hệ thống ROMS trong **3 tuần (RBL Milestone Plan)**. Mỗi thành viên phụ trách **trọn vẹn 1 chức năng theo chiều dọc** (từ BR, TC, CSV data, Page Object, Test Class đến log Bug) kết hợp đảm nhận **một vai trò ngang**:
 
 ---
 
@@ -15,13 +15,13 @@ Nhóm 3 thành viên thực hiện toàn diện quy trình kiểm thử tự đ�
 
 ---
 
-### 2. Kế Hoạch Thực Hiện Trong 1 Ngày (1-Day Intensive Sprint)
+### 2. Kế Hoạch Thực Hiện Trong 3 Tuần (Milestone Plan)
 
-| Khung giờ | Giai đoạn (Milestone) | Đầu ra chính cần hoàn thành | Phụ trách |
+| Tuần | Giai đoạn (Milestone) | Đầu ra chính cần hoàn thành | Phụ trách |
 |:---|:---|:---|:---|
-| **08:00 – 11:30**<br>(Buổi Sáng) | **Giai đoạn 1: Analysis & Design** | - Hoàn thiện BM01 (Test Plan) và BM02 (Business Rules).<br>- Từng bạn thiết kế xong Test Cases (BM03 nháp) và CSV data của chức năng mình.<br>- Tạo bảng Kanban và 12 Issues trên GitHub theo `docs/GITHUB_ISSUES_LIST.md`. | Toàn nhóm |
-| **13:00 – 17:30**<br>(Buổi Chiều) | **Giai đoạn 2: Implementation & Automation** | - Lập trình xong Page Object classes và Test classes cho 3 chức năng.<br>- Mở Pull Request, các thành viên review chéo và merge vào nhánh `main`.<br>- Đạt tỷ lệ tự động hóa $\ge 80\%$ (ít nhất 34 test cases chạy tự động). | Toàn nhóm |
-| **19:00 – 22:30**<br>(Buổi Tối) | **Giai đoạn 3: Execution, Defect & Closure** | - Chạy Regression Test toàn bộ hệ thống bằng `mvn clean test`.<br>- Xuất HTML Surefire Report (`mvn surefire-report:report`).<br>- Ghi nhận các bug phát hiện vào `BM07` và tạo GitHub Issues tương ứng.<br>- Hoàn thiện `BM08 Test Summary Report`, gắn tag git `v1.0` và quay video demo. | Toàn nhóm |
+| **Tuần 1** | **Analysis & Design**<br>(Milestone `W1-Design`) | - Hoàn thiện BM01 (Test Plan) và BM02 (Business Rules).<br>- Từng thành viên thiết kế xong Test Cases (BM03 nháp) và CSV data của chức năng mình.<br>- Dựng khung Skeleton framework & Base classes.<br>- Thiết lập GitHub Projects (Kanban board) và các Issues theo đúng chuẩn. | Toàn nhóm |
+| **Tuần 2** | **Implementation & Automation**<br>(Milestone `W2-Implementation`) | - Lập trình xong Page Object classes và Test classes cho 3 chức năng.<br>- Mở Pull Request, các thành viên review chéo bắt buộc và merge vào nhánh `develop`.<br>- Đạt tỷ lệ tự động hóa $\ge 80\%$ (ít nhất 34 test cases chạy tự động bằng Selenium POM). | Toàn nhóm |
+| **Tuần 3** | **Execution, Defect & Closure**<br>(Milestone `W3-Closure`) | - Chạy Regression Test toàn bộ hệ thống bằng `mvn clean test` (RUN-01, RUN-02).<br>- Xuất HTML Surefire Report (`mvn surefire-report:report`).<br>- Ghi nhận các bug phát hiện vào `BM07` và tạo GitHub Bug Issues tương ứng.<br>- Hoàn thiện `BM08 Test Summary Report`, gắn tag git `v1.0` và quay video demo 5–7 phút nộp bài. | Toàn nhóm |
 
 ---
 

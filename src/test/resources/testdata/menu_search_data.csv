@@ -1,7 +1,0 @@
-tcId,keyword,expectedResult,expectedMinCount
-TC-MENU-001,bò,FOUND,1
-TC-MENU-002,BO,FOUND,1
-TC-MENU-003,gà,FOUND,1
-TC-MENU-004,monan9999xyz,NOT_FOUND,0
-TC-MENU-005,<script>alert(1)</script>,SAFE,0
-TC-MENU-006,' OR 1=1 --,SAFE,0
