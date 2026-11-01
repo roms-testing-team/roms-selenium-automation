@@ -40,8 +40,9 @@ public abstract class BasePage {
 
     protected void type(By locator, String text) {
         WebElement element = waitVisible(locator);
-        element.clear();
-        if (text != null) {
+        // Nhấn Ctrl + A rồi Backspace để xóa sạch giá trị mặc định của React
+        element.sendKeys(org.openqa.selenium.Keys.chord(org.openqa.selenium.Keys.CONTROL, "a"), org.openqa.selenium.Keys.BACK_SPACE);
+        if (text != null && !text.isEmpty()) {
             element.sendKeys(text);
         }
     }
