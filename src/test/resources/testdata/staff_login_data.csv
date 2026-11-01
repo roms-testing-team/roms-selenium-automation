@@ -5,5 +5,6 @@ TC-STAFF-003,KDS-001,123456,SUCCESS,/kitchen
 TC-STAFF-004,CSH-001,123456,SUCCESS,/pos
 TC-STAFF-005,MGR-001,999999,FAIL,Mã PIN không chính xác
 TC-STAFF-006,NOTEXIST,123456,FAIL,Sai tên đăng nhập hoặc mã PIN
-TC-STAFF-007,MGR-001,123,VALIDATION,Mã PIN ca trực phải gồm chính xác 6 chữ số
-TC-STAFF-008,,123456,REQUIRED,Vui lòng nhập Mã Nhân Viên
+TC-STAFF-007,,123456,REQUIRED,Vui lòng nhập Mã Nhân Viên
+TC-STAFF-008,MGR-001,,REQUIRED,Vui lòng nhập Mã PIN
+TC-STAFF-009,MGR-001,123,VALIDATION,Mã PIN ca trực phải gồm chính xác 6 chữ số
