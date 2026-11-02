@@ -1,5 +1,5 @@
 # DANH SÁCH GITHUB ISSUES & QUY ƯỚC ĐẶT TÊN NHÁNH (ROMS)
-## Kế hoạch hoàn thành trong 1 ngày (1-Day Intensive Sprint)
+## Kế hoạch kiểm thử tự động 3 tuần (RBL)
 
 > Tài liệu này liệt kê chi tiết 12 Issues trên GitHub kèm theo **Quy ước tên nhánh (Working Branch)** và câu lệnh git để các thành viên trong nhóm biết chính xác cách tạo nhánh làm việc độc lập mà không bị xung đột (conflict).
 

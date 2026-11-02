@@ -1,9 +1,15 @@
 tcId,fullName,phone,partySize,dateOffsetDays,time,expectedResult,expectedMessage
-TC-RESV-001,Nguyễn Văn An,0912345678,4,1,19:00,SUCCESS,Đặt bàn thành công
-TC-RESV-002,Trần Thị Bình,0987654321,1,1,18:30,SUCCESS,Đặt bàn thành công
-TC-RESV-003,Lê Hoàng Cường,0901234567,20,2,20:00,SUCCESS,Đặt bàn thành công
-TC-RESV-004,Phạm Đức Duy,0912345678,0,1,19:00,FAIL,Số lượng khách phải từ 1 đến 20
-TC-RESV-005,Hoàng Lan Hương,0912345678,21,1,19:00,FAIL,Số lượng khách phải từ 1 đến 20
-TC-RESV-006,Vũ Minh Khôi,0912345,4,1,19:00,FAIL,Số điện thoại không hợp lệ
-TC-RESV-007,Đỗ Thanh Long,abcdefghij,4,1,19:00,FAIL,Số điện thoại không hợp lệ
-TC-RESV-008,,0912345678,4,1,19:00,REQUIRED,Vui lòng nhập họ và tên
+TC-RESV-001,Nguyễn An,0912345678,1,1,19:00,SUCCESS,Đặt bàn thành công
+TC-RESV-002,Trần Bình,0987654321,20,1,19:00,SUCCESS,Đặt bàn thành công
+TC-RESV-003,Lê Cường,0901234567,4,1,19:00,SUCCESS,Đặt bàn thành công
+TC-RESV-004,Phạm Duy,0912345678,0,1,19:00,FAIL,Số lượng khách phải từ 1 đến 20
+TC-RESV-005,Hoàng Hương,0912345678,21,1,19:00,FAIL,Số lượng khách phải từ 1 đến 20
+TC-RESV-006,Vũ Khôi,0912345678,-1,1,19:00,FAIL,Số lượng khách phải từ 1 đến 20
+TC-RESV-007,Đỗ Long,0987654321,4,1,19:00,SUCCESS,Đặt bàn thành công
+TC-RESV-008,Bùi Nam,091234567,4,1,19:00,FAIL,Số điện thoại hợp lệ
+TC-RESV-009,Đặng Phúc,09123456789,4,1,19:00,FAIL,Số điện thoại hợp lệ
+TC-RESV-010,Ngô Quân,09123abcde,4,1,19:00,FAIL,Số điện thoại hợp lệ
+TC-RESV-011,,0912345678,4,1,19:00,REQUIRED,Vui lòng nhập Họ và tên
+TC-RESV-012,<script>alert(1)</script>,0912345678,4,1,19:00,SECURITY,An toàn không kích hoạt XSS
+TC-RESV-013,Trần Quá Khứ,0912345678,4,-1,19:00,FAIL,Ngày đặt bàn không hợp lệ
+TC-RESV-014,Lê Thành Công,0934567890,4,1,19:00,SUCCESS,Mã Đặt Bàn
