@@ -9,9 +9,9 @@ Tài liệu này ghi nhận các Defect phát hiện trên hệ thống ROMS tro
 
 | Defect ID | GitHub Issue | Module | Tiêu đề lỗi | Mức độ (Severity) | Trạng thái (Status) | Người báo |
 |:---|:---:|:---|:---|:---:|:---:|:---|
-| `BUG-ROMS-01` | [#18](https://github.com/roms-testing-team/roms-selenium-automation/issues/18) | M1 Đăng nhập | Trùng thuộc tính `id="outlined-required"` trên cả ô Tài khoản và Mật khẩu ở form Đăng nhập | Minor (Testability) | Open | Dương Trọng |
-| `BUG-ROMS-02` | [#19](https://github.com/roms-testing-team/roms-selenium-automation/issues/19) | M2 Gọi món | Thêm cùng một món ăn nhiều lần tạo ra các dòng riêng biệt trong giỏ hàng thay vì cộng dồn số lượng | Major | Open | Dương Trọng |
-| `BUG-ROMS-03` | [#20](https://github.com/roms-testing-team/roms-selenium-automation/issues/20) | M3 Đặt bàn | Form Đặt bàn cho phép nhập và gửi thông tin với số lượng khách vượt quá quy định (> 20 khách) | Major | Open | Dương Trọng |
+| `BUG-ROMS-01` | [#18](https://github.com/roms-testing-team/roms-selenium-automation/issues/18) | M1 Đăng nhập | Trùng thuộc tính `id="outlined-required"` trên cả ô Tài khoản và Mật khẩu ở form Đăng nhập | Minor (Testability) | Open | Dương Trong |
+| `BUG-ROMS-02` | [#19](https://github.com/roms-testing-team/roms-selenium-automation/issues/19) | M2 Gọi món | Thêm cùng một món ăn nhiều lần tạo ra các dòng riêng biệt trong giỏ hàng thay vì cộng dồn số lượng | Major | Open | Dương Trong |
+| `BUG-ROMS-03` | [#20](https://github.com/roms-testing-team/roms-selenium-automation/issues/20) | M3 Đặt bàn | Form Đặt bàn cho phép nhập và gửi thông tin với số lượng khách vượt quá quy định (> 20 khách) | Major | Open | Dương Trong |
 
 ---
 
@@ -21,7 +21,7 @@ Tài liệu này ghi nhận các Defect phát hiện trên hệ thống ROMS tro
 - **Defect ID:** `BUG-ROMS-01`
 - **GitHub Issue:** [#18](https://github.com/roms-testing-team/roms-selenium-automation/issues/18)
 - **Tiêu đề:** [Đăng nhập][Testability] Trùng thuộc tính id="outlined-required" trên cả trường Tài khoản và Mật khẩu ở form Đăng nhập
-- **Người báo / Ngày:** Dương Trọng (`duogtrog06tk`) / 02-11-2026
+- **Người báo / Ngày:** Dương Trong (`duogtrog06tk`) / 02-11-2026
 - **Module / BR:** M1 Đăng nhập nhân viên / `RULE-LOGIN-01`
 - **Môi trường:** Google Chrome 130+, Windows 11, Web SUT: `http://roms-restaurant.duckdns.org/login`
 - **Severity:** Minor (Testability)
@@ -46,7 +46,7 @@ Tài liệu này ghi nhận các Defect phát hiện trên hệ thống ROMS tro
 - **Defect ID:** `BUG-ROMS-02`
 - **GitHub Issue:** [#19](https://github.com/roms-testing-team/roms-selenium-automation/issues/19)
 - **Tiêu đề:** [Gọi món] Thêm cùng một món ăn nhiều lần tạo ra các dòng riêng biệt trong giỏ hàng thay vì cộng dồn số lượng
-- **Người báo / Ngày:** Dương Trọng (`duogtrog06tk`) / 02-11-2026
+- **Người báo / Ngày:** Dương Trong (`duogtrog06tk`) / 02-11-2026
 - **Module / BR / TC:** M2 Gọi món tại bàn / `RULE-ORDER-04` / `TC-ORDER-004`
 - **Môi trường:** Google Chrome 130+, Windows 11, Web SUT: `http://roms-restaurant.duckdns.org/dining/menu`
 - **Severity:** Major
@@ -71,7 +71,7 @@ Tài liệu này ghi nhận các Defect phát hiện trên hệ thống ROMS tro
 - **Defect ID:** `BUG-ROMS-03`
 - **GitHub Issue:** [#20](https://github.com/roms-testing-team/roms-selenium-automation/issues/20)
 - **Tiêu đề:** [Đặt bàn] Form Đặt bàn cho phép nhập và gửi thông tin với số lượng khách vượt quá quy định (> 20 khách)
-- **Người báo / Ngày:** Dương Trọng (`duogtrog06tk`) / 02-11-2026
+- **Người báo / Ngày:** Dương Trong (`duogtrog06tk`) / 02-11-2026
 - **Module / BR / TC:** M3 Đặt bàn trực tuyến / `RULE-RESV-01` / `TC-RESV-003`
 - **Môi trường:** Google Chrome 130+, Windows 11, Web SUT: `http://roms-restaurant.duckdns.org/reservation`
 - **Severity:** Major

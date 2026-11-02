@@ -122,5 +122,5 @@
 
 | Run ID | Ngày giờ chạy | Build / Commit SUT | Commit Test Suite | Người thực hiện | Môi trường | Tổng số TC | Pass | Fail | Blocked | Tỷ lệ Pass (%) | Thời gian chạy | Ghi chú |
 |:---:|:---|:---|:---|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---|
-| **RUN-01** | 04:05 02/11/2026 | roms-restaurant.duckdns.org (v1.0-RC) | Commit `3cf84a6` | Dương Trọng | Chrome 130 Headless, Win 11 | 42 | 42 | 0 | 0 | 100.0% | 4m 56s | Chạy hồi quy lần 1: Toàn bộ 42 test cases (M1: 12, M2: 14, M3: 16) chạy thành công |
-| **RUN-02** | 04:16 02/11/2026 | roms-restaurant.duckdns.org (v1.0-RC) | Commit `3cf84a6` | Dương Trọng | Chrome 130 Headless, Win 11 | 42 | 42 | 0 | 0 | **100.0%** | 4m 55s | Chạy hồi quy chính thức xác nhận báo cáo Surefire: 42/42 Pass (100%), 0 Fail, 0 Flaky |
+| **RUN-01** | 04:05 02/11/2026 | roms-restaurant.duckdns.org (v1.0-RC) | Commit `3cf84a6` | Dương Trong | Chrome 130 Headless, Win 11 | 42 | 42 | 0 | 0 | 100.0% | 4m 56s | Chạy hồi quy lần 1: Toàn bộ 42 test cases (M1: 12, M2: 14, M3: 16) chạy thành công |
+| **RUN-02** | 04:16 02/11/2026 | roms-restaurant.duckdns.org (v1.0-RC) | Commit `3cf84a6` | Dương Trong | Chrome 130 Headless, Win 11 | 42 | 42 | 0 | 0 | **100.0%** | 4m 55s | Chạy hồi quy chính thức xác nhận báo cáo Surefire: 42/42 Pass (100%), 0 Fail, 0 Flaky |

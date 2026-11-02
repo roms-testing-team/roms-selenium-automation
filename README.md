@@ -24,7 +24,7 @@
 |:---|:---|:---|:---:|:---:|:---:|
 | **M1** | **Đăng nhập nhân viên & Phân quyền (Staff Login & RBAC)** | `/login` | Decision Table, Equivalence Partitioning | **Ngô Viết Bảo Huy** (Test Lead) | `@ngo17574-ops` |
 | **M2** | **Thực đơn & Gọi món tại bàn (Menu & Ordering)** | `/dining/menu`<br>`/dining/cart` | Boundary Value Analysis, State Transition | **Phạm Minh Đức** (Framework Owner) | `@ducminh14-cmd` |
-| **M3** | **Đặt bàn trực tuyến (Public Table Reservation)** | `/reservation` | Boundary Value Analysis, Equivalence Partitioning | **Dương Trọng** (Defect & Doc Owner) | `@duogtrog06tk` |
+| **M3** | **Đặt bàn trực tuyến (Public Table Reservation)** | `/reservation` | Boundary Value Analysis, Equivalence Partitioning | **Dương Trong** (Defect & Doc Owner) | `@duogtrog06tk` |
 
 ---
 

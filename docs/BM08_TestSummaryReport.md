@@ -3,7 +3,7 @@
 
 - **Report ID:** `TSR-ROMS-G01-v1.0`
 - **Ngày lập:** 02/11/2026
-- **Người lập:** Ngô Viết Bảo Huy (Test Lead) & Dương Trọng (Defect & Doc Manager)
+- **Người lập:** Ngô Viết Bảo Huy (Test Lead) & Dương Trong (Defect & Doc Manager)
 - **Môi trường kiểm thử:** `http://roms-restaurant.duckdns.org/` (Nginx + React Frontend + Spring Boot Backend)
 - **Chuẩn báo cáo:** ISO/IEC/IEEE 29119-3 & ISTQB CTFL v4.0
 
